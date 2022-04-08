@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const person = {
+      //     name1: "abcd",
+      //     class1: "B.tech",
+      //     id1: 53426,
+      //     pid: function () {
+      //       console.log(this.id1);
+      //     },
+      //   };
+
+      //   person.pid();
+
+      //object as function
+      //   function student(name2, class2, rollNo) {
+      //     this.name2 = name2;
+      //     this.class2 = class2;
+      //     this.rollNo = rollNo;
+      //   }
+
+      //   var stud1 = new student("abcd", "B.tech", 82634);
+
+      //   console.log(stud1.class2);
+      //   console.log(stud1.name2);
+      //   console.log(stud1.rollNo);
+      //   console.log(typeof stud1);
+
+      //   const myCar = new Object();
+      //   myCar.make = "ford";
+      //   myCar.model = "mustang";
+      //   mycar.year = "2003";
+
+      //in order to execute any function we need to call it however constructors calls automaticaly when ans instance
+      //of the class is created
+
+      class student {
+        constructor(name2, class2, rollNo, year) {
+          this.name2 = name2;
+          this.class2 = class2;
+          this.rollNo = rollNo;
+          this.year = year;
+        }
+
+        age() {
+          let date = new Date();
+          return date.getFullYear() - this.year;
+        }
+      }
+
+      let stud1 = new student("abcd", "B.tech", 82634, 2003);
+      let stud2 = new student("efgh", "B.tech", 27348, 2001);
+      let stud3 = new student("ijkl", "B.tech", 69540, 2004);
+      let stud4 = new student("mnop", "B.tech", 21235, 2002);
+
+      console.log(stud1.name2, stud1.age());
+
+      console.log(stud2.name2, stud2.age());
+      
+      console.log(stud3.name2, stud3.age());
+      
+      console.log(stud4.name2, stud4.age());
+    </script>
+  </body>
+</html>

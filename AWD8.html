@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var a = 10;
+      // console.log(a);
+      // var a = 20;
+
+      //   var data = undefined;
+      //   console.log("I am a " + data);
+      //   var data = "Student";
+      //   console.log("I am a " + data);
+
+      //   function whoIam() {
+      //     console.log("I am a " + data);
+      //     var data = "computer";
+      //     console.log("I am a " + data);
+      //   }
+
+      //   whoIam();
+
+      // var data1 = "hello Students"; //Global variable
+      // function first() {
+      //   var data2 = " How are you"; //Local variable
+      //   second();
+      //   function second() {
+      //     var data3 = " Lets Understand AWD"; //
+      //     console.log(data1 + data2 + data3);
+      //     three();
+      //   }
+      // }
+      // function three() {
+      //   var data4 = "using VScode";
+      //   console.log(data4);
+      // }
+      // first();
+      //   console.log(three());
+
+      const student = {
+        name: "raman",
+        class: "BE",
+        sum: function () {
+          var res = 10 + 20;
+          console.log(res);
+          console.log(this);
+
+          function child() {
+            var name= "Sham";
+            console.log(name);
+            console.log(this);
+          }
+          child();
+        },
+      };
+
+      student.sum();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="rollno" /><br /><br /><br />
+    <button id="showbtn">show</button>
+    <script>
+      class student {
+        constructor(rollNo, name, group, faMarks) {
+          this.rollNo = rollNo;
+          this.name = name;
+          this.group = group;
+          this.faMarks = faMarks;
+        }
+      }
+
+      var stud1 = new student(5234, "A", "G1", 18);
+      var stud2 = new student(5235, "B", "G1", 14);
+      var stud3 = new student(5236, "C", "G1", 17);
+      var stud4 = new student(5237, "D", "G1", 19);
+      var stud5 = new student(5238, "E", "G1", 11);
+      var stud6 = new student(5239, "F", "G1", 20);
+      var stud7 = new student(5240, "G", "G1", 17);
+
+      document.getElementById('showbtn').addEventListener("click", datashow);   
+      function datashow() {
+        if ((document.getElementById("rollno").innerHTML = "5234")) {
+          console.log(stud1.name);
+        } 
+        else if ((document.getElementById('rollno').innerText = "5235")) {
+            console.log(stud2.name);
+        } 
+        else if ((document.getElementById('rollno').innerText = "5236")) {
+            console.log(stud3.name);
+        } 
+        else if ((document.getElementById('rollno').innerText = "5237")) {
+            console.log(stud4.name);
+        } 
+        else if ((document.getElementById('rollno').innerText = "5238")) {
+            console.log(stud5.name);
+        } 
+        else if ((document.getElementById('rollno').innerText = "5239")) {
+            console.log(stud6.name);
+        } 
+        else if ((document.getElementById('rollno').innerText = "5240")) {
+            console.log(stud7.name);
+        }
+        else{
+            console.log("Not Found");
+        }
+      }
+    </script>
+  </body>
+</html>

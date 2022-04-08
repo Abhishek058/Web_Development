@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*in this case the problem will be raised when we have to store 100 different mobile
+        in that situation the same property again and again for 100 diff mobile and we can
+        copy and paste the same pieceof code repeatedly and we have to change values
+        of these property fora perticular mobile so this is the inefficient way to solve such kind of issue
+        here, the concept of objects come into the picture these object help usto bundle these
+        properties or attribute into a single entity.*/
+
+        // var mob = {
+        //     mob_make: "Apple",
+        //     mob_model: "11 pro",
+        //     price: 6000,
+
+        //     wirelessCharge: function(){
+        //         document.write(" ");
+        //     }
+        // }
+
+        /* here, all the properties and function are coupled in a single variabl, called MOB this variable
+        is called as an object */
+
+        /* new key word create a new memory block for a new object in order to store against their prop. and func*/
+        var myVar = 100;
+        function wholsThis() {
+            var myVar = 200;
+
+            console.log(myVar);
+            console.log(this.myVar);
+        }
+
+        wholsThis();
+
+        var obj = new wholsThis();
+        console.log(obj.myVar);
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function ispos(n){
+        //     return (n>=0);
+        // }
+
+        // console.log(ispos(12));
+        // console.log(ispos(-1));bn
+
+        // let isPos = (n) => {
+        //     return (n>=0);
+        // }
+
+        // console.log(isPos(12));
+        // console.log(isPos(-1));
+
+        // let sum = (a, b) => {
+        //     return a+b;
+        // }
+
+        // console.log(sum(32, 23));
+
+        let nCall = prompt("Enter number of call: ");
+        let fixR = 50;
+        let bill = (nCall) => {
+            if(nCall <= 100){
+                return nCall*1+fixR;
+            }
+            else{
+                let t = (nCall-100)*2;
+                return t+100+fixR;
+            }
+        }
+
+        console.log(bill(nCall));
+    </script>
+</body>
+</html>
