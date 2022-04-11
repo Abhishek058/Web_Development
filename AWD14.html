@@ -7,17 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to Jquery 1</h1>
-    <h1>Welcome to Jquery 2</h1>
-    <h1>Welcome to Jquery 3</h1>
-    <h1>Welcome to Jquery 4</h1>
+    <h2>Welcome to Jquery 1</h2>
+    <h2>Welcome to Jquery 2</h2>
+    <h2>Welcome to Jquery 3</h2>
+    <h2>Welcome to Jquery 4</h2>
+    <h1 id="hid"></h1>
 </body>
 <script src="jquery.js"></script>
 <script>
     // console.log("welcome");
     // console.log($);
-    $('h1').click(function(){
+    $('h2').click(function(){
         console.log("You clicked");
+        $('h2').hide();
+        document.getElementById('hid').innerText = "Hidden";
     });
 </script>
 </html>
