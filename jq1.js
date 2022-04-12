@@ -4,20 +4,20 @@ $(document).ready(function(){
 
 // console.log("welcome");
 // console.log($);
-$("h2").click(function () {
-  console.log("You clicked");
-  // $('h2').hide();
-  $(this).hide();
-  document.getElementById("hid").innerText = "Hidden";
-});
+// $("h2").click(function () {
+//   console.log("You clicked");
+//   // $('h2').hide();
+//   $(this).hide();
+//   document.getElementById("hid").innerText = "Hidden";
+// });
 
-$("#second").click(function () {
-  console.log("clicked jquery2", this);
-});
+// $("#second").click(function () {
+//   console.log("clicked jquery2", this);
+// });
 
-$(".test").click(function () {
-  console.log("clicked jquery3 4", this);
-});
+// $(".test").click(function () {
+//   console.log("clicked jquery3 4", this);
+// });
 
 $('dtg').dblclick(function(){
     console.log("clicked h3");
