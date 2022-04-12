@@ -24,5 +24,8 @@ $('dtg').dblclick(function(){
 });
 
 $('dtg').mouseenter(function(){
-    console.log("clicked h3", this);
+  console.log("clicked h3", this);
+});
+$('dtg').hover(function(){
+  console.log("clicked h3", this);
 });
