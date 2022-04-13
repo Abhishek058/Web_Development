@@ -11,12 +11,15 @@
 $('#btnshow').click(function(){
     $('#learning').toggle(800);
 });
-$('#btnfin').fadeIn(function(){
-    $('#learning').toggle(800);
+$('#btnfin').click(function(){
+    $('#learning').fadeIn(800);
 });
-$('#btnfout').fadeIn(function(){
-    $('#learning').toggle(800);
+$('#btnfout').click(function(){
+    $('#learning').fadeOut(800);
 });
-// $('#btn').click(function(){
-//     $('#learning').toggle(800);
-// });
+$('#btnsup').click(function(){
+    $('#learning').slideUp(800);
+});
+$('#btnsdown').click(function(){
+    $('#learning').slideDown(800);
+});
