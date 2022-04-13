@@ -1,13 +1,13 @@
 // $('#learning').hide(3000);
 
-$('#learning').hide(3000, function(){
+$('#learning').hide(1000, function(){
     console.log("content hidden completed...");
 });
 
-$('#learning').show(4000, function(){
+$('#learning').show(1000, function(){
     console.log("content showen completed...");
 });
 
 $('#btn').click(function(){
-    $('#learning').toggle(3000);
+    $('#learning').toggle(500);
 });
