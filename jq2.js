@@ -7,3 +7,7 @@ $('#learning').hide(3000, function(){
 $('#learning').show(4000, function(){
     console.log("content showen completed...");
 });
+
+$('#btn').click(function(){
+    $('#learning').toggle(3000);
+});
