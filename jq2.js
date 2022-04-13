@@ -23,3 +23,6 @@ $('#btnsup').click(function(){
 $('#btnsdown').click(function(){
     $('#learning').slideDown(800);
 });
+$('#btnstog').click(function(){
+    $('#learning').slideToggle(800);
+});
