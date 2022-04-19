@@ -20,5 +20,6 @@ getBtn1.addEventListener('click', () => {
         }
     }
 
-    xhr.send()
+    xhr.send();
+    console.log("Taks done");
 })
