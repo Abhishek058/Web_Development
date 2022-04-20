@@ -30,5 +30,5 @@ getBtn1.addEventListener("click", () => {
     console.log("ready state is ", xhr.readyState);
   };
 
-  
+
 });
