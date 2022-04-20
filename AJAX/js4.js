@@ -1,3 +1,8 @@
+
+// const http = require('http')
+//Error details
+// console.log(http);
+
 let getBtn1 = document.querySelector('#btn-primary');
 // let getBtn2 = document.querySelector('#btn-success');
 
@@ -27,8 +32,3 @@ getBtn1.addEventListener('click', () => {
         console.log("ready state is ", xhr.readyState);
     }
 });
-
-
-// const http = require('http')
-
-// console.log(http);
