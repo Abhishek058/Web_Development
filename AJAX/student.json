@@ -1,0 +1,27 @@
+{
+    "status": "success",
+    "data":[ {
+    "roll": "1",
+    "student_name": "a Nixon",
+    "student_class": "7",
+    "student_age": "61"
+    },
+    {
+        "roll": "2",
+        "student_name": "b Nixon",
+        "student_class": "2",
+        "student_age": "11"
+    },
+    {
+        "roll": "3",
+        "student_name": "c Nixon",
+        "student_class": "320800",
+        "student_age": "13"
+    },
+    {
+        "roll": "4",
+        "student_name": "d Nixon",
+        "student_class": "8",
+        "student_age": "16"
+    }]
+}

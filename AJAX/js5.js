@@ -6,7 +6,7 @@ dispBtn.addEventListener('click', () => {
     const xhr = new XMLHttpRequest()
 
     // using a rest api
-    xhr.open('GET', 'http://dummy.restapiexample.com/api/v1/employees', true)
+    xhr.open('GET', 'student.json', true)
 
     xhr.onload = function(){
         if(this.status === 200){
@@ -19,7 +19,7 @@ dispBtn.addEventListener('click', () => {
             let data = obj.data
             let lst = document.querySelector("#list")
             for(let i = 0; i < data.length ; i++){
-                str += `<li>${obj.data[i].employee_age} </li>`
+                str += `<li>${obj.data[i].student_name} </li>`
             }
             // rendering onto the screen
             lst.innerHTML = str
