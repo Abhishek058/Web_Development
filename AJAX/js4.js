@@ -22,4 +22,10 @@ getBtn1.addEventListener('click', () => {
 
     xhr.send();
     console.log("Taks done");
-})
+
+    xhr.onreadystatechange = function(){
+        console.log("ready state is ", xhr.readyState);
+    }
+});
+
+
