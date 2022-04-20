@@ -1,5 +1,5 @@
 let getBtn1 = document.querySelector('#btn-primary');
-let getBtn2 = document.querySelector('#btn-success');
+// let getBtn2 = document.querySelector('#btn-success');
 
 getBtn1.addEventListener('click', () => {
     console.log("You clicked primary putton");
