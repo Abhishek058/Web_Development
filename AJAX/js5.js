@@ -19,7 +19,7 @@ dispBtn.addEventListener('click', () => {
             let data = obj.data
             let lst = document.querySelector("#list")
             for(let i = 0; i < data.length ; i++){
-                str += `<li>${obj.data[i].employee_name} </li>`
+                str += `<li>${obj.data[i].employee_age} </li>`
             }
             // rendering onto the screen
             lst.innerHTML = str
