@@ -31,6 +31,6 @@ dispBtn.addEventListener('click', () => {
             console.log("Error occurred");
         }
     }
-
-    xhr.send()
+    prmts = {"name":"ram", "salary": 64560};
+    xhr.send(prmts);
 })
