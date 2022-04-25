@@ -2,7 +2,6 @@ const getbtn = document.querySelector("#btn-get");
 const postbtn = document.querySelector("#btn-post");
 const dispBtn = document.querySelector("#btn-disp");
 
-
 // using a third party api
 getbtn.addEventListener("click", () => {
   console.log("You clicked the display button");
@@ -51,7 +50,7 @@ postbtn.addEventListener("click", () => {
       console.log("Error occurred");
     }
   };
-  prmts = { name: "ram", salary: 64560 };
+  prmts = {"name":"ram", "salary": 64560};
   xhr.send(prmts);
 });
 
@@ -61,7 +60,7 @@ dispBtn.addEventListener("click", () => {
   const xhr = new XMLHttpRequest();
 
   // using a rest api
-  xhr.open("GET", "http://dummy.restapiexample.com/api/v1/create", true);
+  xhr.open("GET", "https://gorest.co.in/public/v2/posts", true);
 
   xhr.onload = function () {
     if (this.status === 200) {
