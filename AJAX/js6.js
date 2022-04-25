@@ -6,7 +6,7 @@ dispBtn.addEventListener('click', () => {
     const xhr = new XMLHttpRequest()
 
     // using a rest api
-    xhr.open('POSt', 'http://dummy.restapiexample.com/api/v1/create', true);
+    xhr.open('POST', 'http://dummy.restapiexample.com/api/v1/create', true);
 
     xhr.getResponseHeader('Content-type', 'application/json');
 
