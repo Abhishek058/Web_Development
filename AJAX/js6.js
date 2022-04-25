@@ -12,20 +12,6 @@ dispBtn.addEventListener('click', () => {
 
     xhr.onload = function(){
         if(this.status === 200){
-            // parsing the recieved text
-            // let obj = JSON.parse(this.responseText)
-            // console.log(obj);
-
-            // publishing dynamically through JS
-            // let str = ''
-            // let data = obj.data
-            // let lst = document.querySelector("#list")
-            // for(let i = 0; i < data.length ; i++){
-            //     str += `<li>${obj.data[i].student_name} </li>`
-            // }
-            // // rendering onto the screen
-            // lst.innerHTML = str
-
             console.log(this.responseText);
         }else{
             console.log("Error occurred");
