@@ -1,21 +1,43 @@
 const user = document.querySelector('#userip');
 const pass = document.querySelector('#passip');
-const subtn = document.querySelector('#subip');
+let subtn = document.getElementById("subip");
+let obj = {}
 
-document.addEventListener('click', () => {
-    console.log("Checking info");
-    const xhr = new XMLHttpRequest()
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DATA RECIEVED");
+  const xhr = new XMLHttpRequest();
 
-    // using a rest api
-    xhr.open('GET', 'json1.json', true)
+  xhr.open("GET", "json1.json", true);
 
-    xhr.onload = function(){
-        if(this.status == 200){
-            let obj = JSON.parse(this.responseText)
-        }else{
-            alert("User not found");
+  xhr.onload = function () {
+    if (this.status === 200) {
+      // parsing the recieved text
+        obj = JSON.parse(this.responseText);
+    } else {
+      console.log("Error occurred");
+    }
+  };
+
+  xhr.send();
+});
+
+subtn.addEventListener("click", () => {
+  console.log("Checking Data");
+    const userG = user.value;
+    const passG = pass.value;
+    flag = false;
+
+    for(var i=0; i<obj.data.length; i++){
+        if(userG === obj.data[i].username && passG === obj.data[i].password){
+            flag = true;
+            break;
         }
     }
 
-    xhr.send()
-})
+    if(flag){
+        alert("Successfully Login");
+    }
+    else{
+        alert("Invalid Username or Password")
+    }
+});
