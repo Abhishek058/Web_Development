@@ -3,6 +3,7 @@ const pass = document.querySelector('#passip');
 let subtn = document.getElementById("subip");
 let obj = {}
 
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DATA RECIEVED");
   const xhr = new XMLHttpRequest();
@@ -35,9 +36,9 @@ subtn.addEventListener("click", () => {
     }
 
     if(flag){
-        alert("Successfully Login");
+        document.getElementById('op').innerText = "Successfully LogedIn";
     }
     else{
-        alert("Invalid Username or Password")
+        document.getElementById('op').innerText = "Invalid Username or Password";
     }
 });
