@@ -10,8 +10,8 @@ document.addEventListener('click', () => {
     xhr.open('GET', 'json1.json', true)
 
     xhr.onload = function(){
-        if(){
-            
+        if(this.status == 200){
+            let obj = JSON.parse(this.responseText)
         }else{
             alert("User not found");
         }
