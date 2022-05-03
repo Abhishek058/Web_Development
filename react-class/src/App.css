@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+*{
+  margin: 0;
+  padding: 0;
+}
+.header-h1{
+  background-color: #000000;
+  width: 35%;
+  margin: auto;
+  color: white;
+  border-radius: 5px;
+}
