@@ -36,33 +36,38 @@
     transform: rotate(360deg);
   }
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
-.header{
+.header {
   background-color: black;
 }
-.header-p{
+.header-p {
   color: white;
   padding: 10px;
 }
-#header-span{
+#header-span {
   color: aqua;
 }
-#nav-bar{
+#nav-bar {
   display: flex;
   background-color: #20232a;
   padding: 10px;
 }
-.header-h2{
+.nav-bar-img {
+  width: 27px;
+  height: 25px;
+  margin: auto;
+}
+.header-h2 {
   color: aqua;
   display: flex;
   flex: 0.2;
   justify-content: center;
   align-items: center;
 }
-.nav{
+.nav {
   color: white;
   display: flex;
   flex: 0.4;
@@ -71,12 +76,12 @@
   font-size: 20px;
 }
 
-.nav p:hover{
+.nav p:hover {
   color: aqua;
   cursor: pointer;
 }
 
-#header-search{
+#header-search {
   background: transparent;
   outline: none;
   border: none;
@@ -91,36 +96,54 @@
   padding: 0rem 0.5rem;
   transition: background 150ms ease-out;
 }
-#header-search:focus{
-  background: rgba(255,255,255,0.2);
+#header-search:focus {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.about{
+.about {
   background-color: #282c34;
   color: white;
 }
-#about-h1{
+#about-h1 {
   font-size: 60px;
   color: aqua;
   padding: 30px;
 }
 
-#about-p1{
+#about-p1 {
   font-size: 35px;
 }
 
-#about-btn{
+#about-btn {
   display: flex;
   width: fit-content;
   margin: auto;
   margin-top: 50px;
   padding-bottom: 70px;
 }
-#getstart-btn{
-
+#getstart-btn {
   background-color: aqua;
   border: none;
-  width: 120px;
-  height: 50px;
-  
+  width: 150px;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: 1.5s;
+}
+#getstart-btn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#about-p2 {
+  font-size: 25px;
+  margin-left: 40px;
+  margin-top: 8px;
+  transition: 1s;
+  text-decoration: none;
+  color: white;
+}
+#about-p2:hover {
+  color: aqua;
+  cursor: pointer;
 }
