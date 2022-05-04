@@ -94,3 +94,33 @@
 #header-search:focus{
   background: rgba(255,255,255,0.2);
 }
+
+.about{
+  background-color: #282c34;
+  color: white;
+}
+#about-h1{
+  font-size: 60px;
+  color: aqua;
+  padding: 30px;
+}
+
+#about-p1{
+  font-size: 35px;
+}
+
+#about-btn{
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 70px;
+}
+#getstart-btn{
+
+  background-color: aqua;
+  border: none;
+  width: 120px;
+  height: 50px;
+  
+}
