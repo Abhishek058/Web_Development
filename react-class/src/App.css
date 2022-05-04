@@ -71,6 +71,11 @@
   font-size: 20px;
 }
 
+.nav p:hover{
+  color: aqua;
+  cursor: pointer;
+}
+
 #header-search{
   background: transparent;
   outline: none;
