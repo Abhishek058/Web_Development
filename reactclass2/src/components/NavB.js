@@ -22,7 +22,7 @@ function NavB(props) {
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">About</Nav.Link>
+            <Nav.Link href="#action2">{props.abouttxt}</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <FormControl

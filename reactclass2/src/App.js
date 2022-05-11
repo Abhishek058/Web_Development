@@ -5,7 +5,7 @@ import NavB from './components/NavB';
 function App() {
   return (
     <div className="App">
-      <NavB title="Chitkara University Punjab Campus" />
+      <NavB title="Chitkara University" abouttxt = "AboutCU"/>
     </div>
   );
 }
