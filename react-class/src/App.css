@@ -147,3 +147,17 @@
   color: aqua;
   cursor: pointer;
 }
+
+.upperdiv{
+  display: flex;
+  text-align: left;
+  margin-top: 50px;
+}
+.dv{
+  padding: 50px;
+}
+.upperdiv-h1{
+  font-size: 25px;
+  font-weight: 200;
+  color: grey;
+}
