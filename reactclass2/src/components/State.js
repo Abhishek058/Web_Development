@@ -5,7 +5,6 @@ function State() {
   const handleOnClick = () => {
     let newTxt = text.toUpperCase();
     settext(newTxt);
-    console.log(newTxt);
   };
   const handleOnChange = (event) => {
     settext(event.target.value);
@@ -14,7 +13,7 @@ function State() {
     <div>
       <textarea
         className="form-control"
-        value = {text}
+        value={text}
         id="text-area"
         rows="10"
         onChange={handleOnChange}
