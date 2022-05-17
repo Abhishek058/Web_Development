@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+#text-area{
+  border: 3px solid lightblue;
+  resize: none;
+}
+
+#text_btn{
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 50px;
+}
