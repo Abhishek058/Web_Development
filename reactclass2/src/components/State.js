@@ -3,8 +3,13 @@ import React, { useState } from "react";
 function State() {
   const [text, settext] = useState("");
   const handleOnClick = () => {
-    let newTxt = text.toUpperCase();
-    settext(newTxt);
+    if (text == text.toLowerCase()) {
+      let newTxt = text.toUpperCase();
+      settext(newTxt);
+    } else {
+      let newTxt = text.toLowerCase();
+      settext(newTxt);
+    }
   };
   const handleOnChange = (event) => {
     settext(event.target.value);
