@@ -1,6 +1,7 @@
 
 import './App.css';
 import NavB from './components/NavB';
+import State from './components/State';
 
 function App() {
   return (
