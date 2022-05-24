@@ -33,6 +33,26 @@ function State() {
     let newText = "";
     settext(newText);
   };
+  // const[btntext, setbtntext] = useState('initialtate');
+  const [myStyle, setMyStyle] = useState({
+    color: "black",
+    backgroundColor: "white",
+  });
+
+  const toggleStyle = () => {
+    if (myStyle.color == "black") {
+      setMyStyle({
+        color: "white",
+        backgroundColor: "black",
+      });
+    } 
+    else if(myStyle.color == "white") {
+      setMyStyle({
+        color: "black",
+        backgroundColor: "lightblue",
+      });
+    }
+  };
   return (
     <div>
       <textarea
@@ -46,16 +66,16 @@ function State() {
         <button id="text_btn" onClick={handleOnClick}>
           Convert
         </button>
-        <button className="btn" id="text_btn" onClick={replaceStr}>
+        <button id="text_btn" onClick={replaceStr}>
           Replace
         </button>
-        <button className="btn" id="text_btn" onClick={handleOnClear}>
+        <button id="text_btn" onClick={handleOnClear}>
           Clear
         </button>
-        <button className="btn" id="text_btn" onClick={charatStr}>
+        <button id="text_btn" onClick={charatStr}>
           Char At
         </button>
-        <button className="btn" id="text_btn" onClick={repeatStr}>
+        <button id="text_btn" onClick={repeatStr}>
           Repeat
         </button>
       </div>
@@ -63,11 +83,9 @@ function State() {
         <p>Number of words written : {text.split("").length}</p>
         <p>No. of letters in sentence written : {text.split("").length}</p>
       </div>
-      <div>
-        <Accordion
-        
-        defaultActiveKey="0">
-          <Accordion.Item eventKey="0">
+      <div className="container my-3">
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0" style={myStyle}>
             <Accordion.Header>Accordion #1</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -79,7 +97,7 @@ function State() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="1" style={myStyle}>
             <Accordion.Header>Accordion #2</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -92,6 +110,9 @@ function State() {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+        <button id="text_btn" onClick={toggleStyle}>
+          Dark/Light
+        </button>
       </div>
     </div>
   );
