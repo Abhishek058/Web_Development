@@ -4,7 +4,7 @@ import { Accordion } from "react-bootstrap";
 function State() {
   const [text, settext] = useState("");
   const handleOnClick = () => {
-    if (text == text.toLowerCase()) {
+    if (text === text.toLowerCase()) {
       let newTxt = text.toUpperCase();
       settext(newTxt);
     } else {
@@ -68,7 +68,7 @@ function State() {
         
         defaultActiveKey="0">
           <Accordion.Item eventKey="0">
-            <Accordion.Header>Accordion Item #1</Accordion.Header>
+            <Accordion.Header>Accordion #1</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -80,7 +80,7 @@ function State() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>Accordion Item #2</Accordion.Header>
+            <Accordion.Header>Accordion #2</Accordion.Header>
             <Accordion.Body>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
