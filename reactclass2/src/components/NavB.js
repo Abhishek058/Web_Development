@@ -10,28 +10,9 @@ import {
 } from "react-bootstrap";
 
 function NavB(props) {
-  const [myStyle, setmyStyle] = useState({
-    color: "black",
-    backgroundColor: "lightblue",
-  });
-
-  const checkStyle = () => {
-    if (myStyle.color === "black") {
-      setmyStyle({
-        color: "white",
-        backgroundColor: "black",
-      });
-    } 
-    else if(myStyle.color === "white") {
-      setmyStyle({
-        color: "black",
-        backgroundColor: "lightblue",
-      });
-    }
-  };
   return (
-    <Navbar bg="light" expand="lg">
-      <Container fluid style={myStyle}>
+    <Navbar className = {`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`} expand="lg">
+      <Container fluid>
         <Navbar.Brand href="#">{props.title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -44,7 +25,7 @@ function NavB(props) {
             <Nav.Link href="#action2">{props.abouttxt}</Nav.Link>
           </Nav>
           <Form>
-            <Form.Check type="switch" id="custom-switch" label="Dark Mode" onClick={checkStyle}/>
+            <Form.Check type="switch" id="custom-switch" onClick={props.checkStyle}/>
           </Form>
         </Navbar.Collapse>
       </Container>
