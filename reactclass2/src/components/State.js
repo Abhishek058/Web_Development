@@ -36,7 +36,7 @@ function State() {
   // const[btntext, setbtntext] = useState('initialtate');
   const [myStyle, setMyStyle] = useState({
     color: "black",
-    backgroundColor: "white",
+    backgroundColor: "lightblue",
   });
 
   const toggleStyle = () => {
