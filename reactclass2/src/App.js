@@ -1,33 +1,38 @@
-
-import './App.css';
-import NavB from './components/NavB';
-import { useState } from 'react';
-import State from './components/State';
+import "./App.css";
+import NavB from "./components/NavB";
+import { useState } from "react";
+import State from "./components/State";
+import App3 from "./components/App3";
 
 function App() {
-  const [mode, setMode] = useState('light');
+  const [mode, setMode] = useState("light");
 
   const checkStyle = () => {
     if (mode === "light") {
-      setMode('dark');
-    } 
-    else if(mode === "dark") {
-      setMode('light');
+      setMode("dark");
+    } else if (mode === "dark") {
+      setMode("light");
     }
   };
-  const [modeName, setName]= useState('Dark Mode')
+  const [modeName, setName] = useState("Dark Mode");
   const checkMode = () => {
-    if(modeName == 'Dark Mode'){
-      setName('Light Mode');
-    }
-    else if(modeName == 'Light Mode'){
-      setName('Dark Mode');
+    if (modeName == "Dark Mode") {
+      setName("Light Mode");
+    } else if (modeName == "Light Mode") {
+      setName("Dark Mode");
     }
   };
   return (
     <div className="App">
-      <NavB title="Chitkara University" abouttxt = "AboutCU" mode={mode} checkStyle={checkStyle} checkMode={checkMode}/>
+      <NavB
+        title="Chitkara University"
+        abouttxt="AboutCU"
+        mode={mode}
+        checkStyle={checkStyle}
+        checkMode={checkMode}
+      />
       <State />
+      <App3 />
     </div>
   );
 }
