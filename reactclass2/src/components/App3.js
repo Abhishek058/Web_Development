@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Students from "./Students";
 
 export default class App3 extends Component {
   constructor() {
@@ -25,7 +26,7 @@ export default class App3 extends Component {
     return (
       <div className="app3">
         {this.state.student.map((student) => (
-          <Student
+          <Students
             name={student.name}
             marks={student.marks}
             increment={this.increment}
