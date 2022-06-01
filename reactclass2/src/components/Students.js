@@ -16,6 +16,7 @@ export default class Students extends Component {
       <div>
           <h2>{this.props.name}</h2>
           <h2>{this.props.marks}</h2>
+          
       </div>
     )
   }
