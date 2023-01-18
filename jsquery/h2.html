@@ -1,0 +1,53 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    p {
+      display: inline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <h1>Dave Likes to have</h1>
+    <div class="checkboxes">
+      <input type="checkbox" name="bev" id="" value="Coffee" />
+      <p>Coffee</p>
+      <br />
+      <input type="checkbox" name="bev" id="" value="Tea" />
+      <p>Tea</p>
+      <br />
+      <input type="checkbox" name="bev" id="" value="Green-Tea" />
+      <p>Green-Tea</p>
+      <br />
+      <input type="checkbox" name="bev" id="" value="Ice-Tea" />
+      <p>Ice-Tea</p>
+      <br />
+    </div>
+    <h1>At</h1>
+    <div class="where">
+      <input type="radio" name="location" class="radio" value="Home" />
+      <p>Home</p>
+      <input type="radio" name="location" class="radio" value="Restraurant" />
+      <p>Resturant</p>
+    </div>
+    <div>
+      <h2 id="para"></h2>
+    </div>
+  </div>
+</body>
+
+<script>
+  $(document).ready(function () {
+    var here = $('input[name="location"').val();
+    $(".radio").click(function () {
+      var text = "";
+      $('input[name="bev"]:checked').each(function () {
+        text += $(this).val() + ", ";
+      });
+      var here = $('input[name="location"]:checked').val();
+      $("#para").text("Dave likes to have " + text + " at " + here);
+    });
+  });
+</script>
